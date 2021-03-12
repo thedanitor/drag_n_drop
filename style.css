@@ -1,22 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
-    /* width not affected by padding or border */
-    box-sizing: border-box;
+  /* width not affected by padding or border */
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
+  display: flex;
+  background-color: steelblue;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* empty div */
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #000;
+  background: #fff;
+}
+
+/* fill div containing image */
+.fill {
+  background-image: url("./pietro-jeng-0Sd2qqU5soQ-unsplash.jpg");
+  height: 145px;
+  width: 145px;
+  background-size: cover;
+}
+
+/* while image is being "held/dragged" */
+.hold {
+  border: solid 5px #fff;
+}
+
+/* div that image is hovering over */
+.hovered {
+  background-color: #000;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+/* stack divs vertically if screen less than 800px wide */
+@media (max-width: 800px) {
+  body {
     flex-direction: column;
-    /* Centered horizontally */
-    align-items: center; 
-    /* Centered vertically on 100% viewport */
-    justify-content: center;
-    /* 100% viewport height  */
-    height: 100vh;
-    /* don't want scrollbars  */
-    overflow: hidden;
-    /* no margins  */
-    margin: 0;
+  }
 }
