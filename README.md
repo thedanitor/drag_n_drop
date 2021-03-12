@@ -8,8 +8,9 @@ Photo by <a href="https://unsplash.com/@pietrozj?utm_source=unsplash&utm_medium=
 
 ### Overall Impression
 
-
-
+So glad to finally learn how to effectively use the drag and drop feature! Would never have thought to prevent default on dragover/dragenter.
 ### Things Learned
 
 * Get random unsplash image with url "https://source.unsplash.com/random/150x150" Can specify size.
+* There are many "drag" events: dragstart, dragend, dragover... that can be used as event listeners.
+* Can use setTimeout with 0 ms. Will trigger function after other functions
